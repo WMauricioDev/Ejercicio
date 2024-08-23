@@ -1,10 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Persona(models.Model):
-    nombre = models.CharField(max_length=255)
-    telefono = models.CharField(max_length=20)
-    email = models.EmailField(max_length=100, unique=True)
-    fecha = models.DateField(auto_now=True)
+class Tareas(models.Model):
+    tareas =  models.CharField
     def __str__(self):
-        return self.nombre
+        return self.nombres
